@@ -1,0 +1,59 @@
+/* Basic Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  font-weight: 400; }
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 16px; }
+
+.heading-primary {
+  color: red;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  font-size: 3.5rem; }
+
+.header {
+  height: 100vh;
+  background-image: url(../img/header1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%; }
+  .header__logo {
+    height: 5.5rem; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.navigation {
+  position: absolute;
+  top: 4rem;
+  left: 70%; }
+  .navigation__list {
+    list-style: none; }
+  .navigation__item {
+    float: left; }
+  .navigation__link {
+    text-decoration: none;
+    color: #fff; }

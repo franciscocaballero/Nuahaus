@@ -23,4 +23,30 @@
         transform: translate(-50%,-50%);
         
     }
+
+}
+
+.navigation{
+    position: absolute;
+    top: 4rem;
+    left: 70%;
+    
+    &__nav {
+        
+    }
+    &__list{
+        list-style: none;
+        
+        
+    }
+    
+    &__item {
+        float: left;
+    
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;        
+    }
 }
