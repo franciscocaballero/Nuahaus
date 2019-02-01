@@ -1,6 +1,10 @@
 .header {
     height: 100vh;
-    background-image: url(../img/header1.jpg);
+    background-image:  linear-gradient(
+        to right top,
+        rgba($color-black, 0.801),
+        rgba($color-black, 0.801)), 
+        url(../img/NuaHaus1loc.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -11,16 +15,16 @@
     }
 
     &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
+        position: absolute; 
+        top: 5rem;
+        left: 10rem;
     }
 
     &__text-box {
         position: absolute;
         top: 40%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        left: 10%;
+        
         
     }
 
@@ -28,25 +32,35 @@
 
 .navigation{
     position: absolute;
-    top: 4rem;
-    left: 70%;
+    top: 5rem;
+    left: 60%;
     
     &__nav {
         
     }
     &__list{
         list-style: none;
-        
-        
     }
     
     &__item {
         float: left;
-    
+        margin-right: 3rem;
+        font-size: 1.5rem;
     }
 
     &__link {
         text-decoration: none;
-        color: $color-white;        
+        color: $color-white;   
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        transition: all .2s;
+        &:hover{
+            border-bottom: solid $color-primary 2px;
+            margin-bottom: 2rem;
+    
+            
+        }
     }
 }
