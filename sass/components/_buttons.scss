@@ -2,7 +2,7 @@
     text-decoration: none;
     text-transform: uppercase;
     padding: 1.5rem 4rem;
-    border-radius: 10rem;
+    border-radius: none;
     transition: all .2s;
     font-size: 1.6rem;
     display: inline-block;
@@ -14,5 +14,19 @@
     &--primary {
         background-color: $color-primary;
         color: $color-white;
+    }
+
+    &:link,
+    &:visited {
+        transition: all .2s
+
+    }
+    &:hover {
+        transform: translateY(-.2rem);
+        box-shadow: 0 1rem 2rem rgba($color-primary,.15);
+    }
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 .5rem 1rem rgba($color-primary,.15);
     }
 }

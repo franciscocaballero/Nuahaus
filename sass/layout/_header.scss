@@ -1,10 +1,10 @@
 .header {
-    height: 100vh;
+    height: 95vh;
     background-image:  linear-gradient(
-        to right top,
-        rgba($color-black, 0.801),
-        rgba($color-black, 0.801)), 
-        url(../img/NuaHaus1loc.jpg);
+        to right,
+        rgba($color-black, 1),
+        rgba($color-white, 0)), 
+        url(../img/pad-thai.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -17,7 +17,7 @@
     &__logo-box {
         position: absolute; 
         top: 5rem;
-        left: 10rem;
+        left: 10%;
     }
 
     &__text-box {
@@ -38,6 +38,7 @@
     &__nav {
         
     }
+
     &__list{
         list-style: none;
     }
@@ -56,11 +57,13 @@
         font-weight: 100;
         text-transform: uppercase;
         transition: all .2s;
+        margin-bottom: 3rem;
+        border-bottom: solid transparent 2px; 
+        padding-bottom: 1rem;
+
         &:hover{
-            border-bottom: solid $color-primary 2px;
-            margin-bottom: 2rem;
-    
-            
+            margin-bottom: 3rem;
+            border-bottom: solid $color-primary 2px;    
         }
     }
 }

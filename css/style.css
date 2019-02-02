@@ -26,14 +26,18 @@ body {
   text-transform: uppercase;
   margin-bottom: 6rem;
   font-size: 3.5rem;
-  letter-spacing: .5rem;
+  letter-spacing: .1rem;
   font-weight: 100; }
+  .heading-primary--main {
+    display: block; }
+  .heading-primary--sub {
+    display: block; }
 
 .btn {
   text-decoration: none;
   text-transform: uppercase;
   padding: 1.5rem 4rem;
-  border-radius: 10rem;
+  border-radius: none;
   transition: all .2s;
   font-size: 1.6rem;
   display: inline-block;
@@ -43,10 +47,18 @@ body {
   .btn--primary {
     background-color: #edbc46;
     color: #fff; }
+  .btn:link, .btn:visited {
+    transition: all .2s; }
+  .btn:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 1rem 2rem rgba(237, 188, 70, 0.15); }
+  .btn:active {
+    transform: translateY(0);
+    box-shadow: 0 0.5rem 1rem rgba(237, 188, 70, 0.15); }
 
 .header {
-  height: 100vh;
-  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)), url(../img/NuaHaus1loc.jpg);
+  height: 95vh;
+  background-image: linear-gradient(to right, black, rgba(255, 255, 255, 0)), url(../img/pad-thai.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -56,7 +68,7 @@ body {
   .header__logo-box {
     position: absolute;
     top: 5rem;
-    left: 10rem; }
+    left: 10%; }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -79,7 +91,10 @@ body {
     font-size: 1.6rem;
     font-weight: 100;
     text-transform: uppercase;
-    transition: all .2s; }
+    transition: all .2s;
+    margin-bottom: 3rem;
+    border-bottom: solid transparent 2px;
+    padding-bottom: 1rem; }
     .navigation__link:hover {
-      border-bottom: solid #edbc46 2px;
-      margin-bottom: 2rem; }
+      margin-bottom: 3rem;
+      border-bottom: solid #edbc46 2px; }

@@ -11,6 +11,14 @@ body {
     text-transform: uppercase;
     margin-bottom: 6rem;
     font-size: 3.5rem;
-    letter-spacing: .5rem;
+    letter-spacing: .1rem;
     font-weight: 100;
+
+    &--main {
+        display: block;
+    }
+
+    &--sub {
+        display: block;
+    }
 }
