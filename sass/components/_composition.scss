@@ -1,0 +1,8 @@
+.composition {
+    position: relative;
+    
+    &__photo {
+        width: 25%;
+        position: absolute;
+    }
+}
