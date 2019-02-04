@@ -22,3 +22,15 @@ body {
         display: block;
     }
 }
+
+.heading-secondary {
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
