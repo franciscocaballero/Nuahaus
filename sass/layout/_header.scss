@@ -45,8 +45,12 @@
     
     &__item {
         float: left;
-        margin-right: 3rem;
+        
         font-size: 1.5rem;
+
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
     }
 
     &__link {
