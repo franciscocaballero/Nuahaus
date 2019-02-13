@@ -1,6 +1,6 @@
 .footer {
     background-color: $color-grey-dark-3;
-    padding: 10rem 0;
+    padding: 3rem 0;
     font-size: 1.4rem;
     color: $color-grey-light; 
     &__logo-box {
@@ -8,7 +8,7 @@
         margin-bottom: 8rem;
     }
     &__logo {
-        width: 15rem;
+        width: 20rem;
         height: auto;
     }
 
@@ -43,13 +43,19 @@
         &:hover{
             color: $color-primary;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
-            transform: scale(1.3);
+            transform: scale(2);
         }
     }
     &__copyright {
         border-top: 1px solid $color-grey-dark;
-        padding: 2rem;
+        padding: 1rem;
+        
         width: 80%;
         float: right;
+
+        &--block {
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
     }
 }
