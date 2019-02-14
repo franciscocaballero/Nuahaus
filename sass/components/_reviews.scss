@@ -1,0 +1,12 @@
+.reviews {
+    width: 50%;
+    margin: 0 auto;
+    &__rating {
+        letter-spacing: .2rem;
+        font-size: 2rem;
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+    }
+}
