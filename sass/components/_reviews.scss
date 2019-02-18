@@ -1,6 +1,8 @@
 .reviews {
-    width: 100%;
+    width: 110%;
     margin: 0 auto;
+    background-color: rgba($color-white, .6);
+    padding: 3rem;
 
     &__rating {
         color: $color-gold;
@@ -10,5 +12,9 @@
     &__paragraph {
         font-size: 2rem;
         color: $color-grey-dark;
+    }
+
+    &__name {
+        font-size: 2rem;
     }
 }

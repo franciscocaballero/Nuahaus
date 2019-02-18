@@ -67,10 +67,14 @@ body {
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
 .bg-video {
   position: absolute;
   width: 100%;
-  z-index: -1; }
+  z-index: -1;
+  opacity: .30; }
   .bg-video__content {
     height: 100%;
     width: 100%;
@@ -125,14 +129,18 @@ body {
     transform: scale(0.95); }
 
 .reviews {
-  width: 100%;
-  margin: 0 auto; }
+  width: 110%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3rem; }
   .reviews__rating {
     color: #D4AF37;
     font-size: 2.5rem; }
   .reviews__paragraph {
     font-size: 2rem;
     color: #777; }
+  .reviews__name {
+    font-size: 2rem; }
 
 .header {
   height: 95vh;
@@ -252,4 +260,4 @@ body {
   padding: 0; }
 
 .section-reviews {
-  padding: 20rem 0; }
+  padding: 15rem 0; }
