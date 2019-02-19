@@ -13,7 +13,7 @@ body {
     font-size: 3.5rem;
     letter-spacing: .1rem;
     font-weight: 100;
-
+    
     &--main {
         display: block;
     }
@@ -29,10 +29,18 @@ body {
     font-weight: 700;
     display: inline-block;
     letter-spacing: .2rem;
+
+    &--white{
+        color: $color-white;
+    }
 }
 .heading-tertiary{
     text-transform: uppercase;
     font-size: 2.5rem;
+
+    &--white{
+        color: $color-white;
+    }
 }
 
 .paragraph {

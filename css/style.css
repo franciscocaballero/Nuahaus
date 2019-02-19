@@ -39,10 +39,14 @@ body {
   font-weight: 700;
   display: inline-block;
   letter-spacing: .2rem; }
+  .heading-secondary--white {
+    color: #fff; }
 
 .heading-tertiary {
   text-transform: uppercase;
   font-size: 2.5rem; }
+  .heading-tertiary--white {
+    color: #fff; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -164,18 +168,18 @@ body {
   transform: all .3s; }
 
 .reviews {
-  width: 110%;
+  width: 100%;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.6);
   padding: 3rem; }
   .reviews__rating {
     color: #D4AF37;
     font-size: 2.5rem; }
   .reviews__paragraph {
     font-size: 2rem;
-    color: #777; }
+    color: #fff; }
   .reviews__name {
-    font-size: 2rem; }
+    font-size: 2rem;
+    color: #fff; }
 
 .header {
   height: 95vh;
@@ -295,7 +299,7 @@ body {
   padding: 0; }
 
 .section-reviews {
-  padding: 15rem 0; }
+  padding: 10rem 0; }
 
 .section-contact {
   padding: 15rem 0;
