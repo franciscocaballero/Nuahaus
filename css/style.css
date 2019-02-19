@@ -73,8 +73,7 @@ body {
 .bg-video {
   position: absolute;
   width: 100%;
-  z-index: -1;
-  opacity: .30; }
+  z-index: -1; }
   .bg-video__content {
     height: 100%;
     width: 100%;
@@ -127,6 +126,23 @@ body {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  color: inherit; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+  .form__input:focus:invalid {
+    border-bottom: 3px #ff7730; }
 
 .reviews {
   width: 110%;
@@ -261,3 +277,16 @@ body {
 
 .section-reviews {
   padding: 15rem 0; }
+
+.section-contact {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #edbc46, #f7cf6f); }
+
+.contact {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/salad.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  height: 50rem; }
+  .contact__form {
+    width: 50%;
+    padding: 6rem; }
