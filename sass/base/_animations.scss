@@ -1,0 +1,9 @@
+
+
+@keyframes blickingBtn {
+    0%{     color: $color-white;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: $color-white;    }
+}

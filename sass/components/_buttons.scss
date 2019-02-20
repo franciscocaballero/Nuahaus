@@ -30,3 +30,11 @@
         box-shadow: 0 .5rem 1rem rgba($color-primary,.15);
     }
 }
+
+.btn-arrow{
+    text-decoration: none;
+    font-size: 4rem;
+    color: $color-white;
+    animation: blickingBtn 2s infinite;
+    
+}

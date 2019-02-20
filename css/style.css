@@ -1,3 +1,15 @@
+@keyframes blickingBtn {
+  0% {
+    color: #fff; }
+  49% {
+    color: transparent; }
+  50% {
+    color: transparent; }
+  99% {
+    color: transparent; }
+  100% {
+    color: #fff; } }
+
 /* Basic Reset */
 *,
 *::after,
@@ -40,16 +52,19 @@ body {
   display: inline-block;
   letter-spacing: .2rem; }
   .heading-secondary--white {
-    color: #fff; }
+    color: #fff;
+    font-weight: 300; }
 
 .heading-tertiary {
-  text-transform: uppercase;
-  font-size: 2.5rem; }
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 300; }
   .heading-tertiary--white {
     color: #fff; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  font-weight: 300; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -79,8 +94,8 @@ body {
   width: 100%;
   z-index: -1; }
   .bg-video__content {
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
     object-fit: cover; }
 
 .btn {
@@ -106,10 +121,16 @@ body {
     transform: translateY(0);
     box-shadow: 0 0.5rem 1rem rgba(237, 188, 70, 0.15); }
 
+.btn-arrow {
+  text-decoration: none;
+  font-size: 4rem;
+  color: #fff;
+  animation: blickingBtn 2s infinite; }
+
 .composition {
   position: relative; }
   .composition__photo {
-    width: 75%;
+    width: 100%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     position: absolute;
@@ -144,7 +165,8 @@ body {
   border-bottom: 3px solid transparent;
   width: 90%;
   display: block;
-  color: inherit; }
+  color: inherit;
+  resize: none; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -299,7 +321,7 @@ body {
   padding: 0; }
 
 .section-reviews {
-  padding: 10rem 0; }
+  padding: 5rem 0; }
 
 .section-contact {
   padding: 15rem 0;
