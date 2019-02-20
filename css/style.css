@@ -48,7 +48,7 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   display: inline-block;
   letter-spacing: .2rem; }
   .heading-secondary--white {
@@ -79,6 +79,9 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 10rem !important; }
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
@@ -136,15 +139,6 @@ body {
     position: absolute;
     z-index: 10;
     transition: all .2s; }
-    .composition__photo--p1 {
-      left: 5rem;
-      top: -2rem; }
-    .composition__photo--p2 {
-      left: -5rem;
-      top: 5rem; }
-    .composition__photo--p3 {
-      left: 20%;
-      top: 10rem; }
     .composition__photo:hover {
       transform: scale(1.05) translateY(-0.5rem);
       z-index: 20;
@@ -204,7 +198,7 @@ body {
     color: #fff; }
 
 .header {
-  height: 95vh;
+  min-height: 95vh;
   background-image: linear-gradient(to right, black, rgba(255, 255, 255, 0)), url(../img/pad-thai.jpg);
   background-size: cover;
   background-position: center;
@@ -314,11 +308,8 @@ body {
       margin-bottom: 2rem; }
 
 .section-about {
-  padding: 25rem 0;
+  padding: 10rem 0 25rem 0;
   background-color: #f7f7f7; }
-
-.section-menu {
-  padding: 0; }
 
 .section-reviews {
   padding: 5rem 0; }
