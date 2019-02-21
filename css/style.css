@@ -146,6 +146,21 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.meals {
+  list-style: none;
+  width: 100%; }
+  .meals__list {
+    display: block;
+    float: left;
+    width: 25%; }
+  .meals__photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden; }
+    .meals__photo img {
+      width: 100%;
+      height: auto; }
+
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
@@ -310,6 +325,9 @@ body {
 .section-about {
   padding: 10rem 0 25rem 0;
   background-color: #f7f7f7; }
+
+.section-meals {
+  padding: 0; }
 
 .section-reviews {
   padding: 5rem 0; }
