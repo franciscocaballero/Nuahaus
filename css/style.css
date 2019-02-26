@@ -131,7 +131,9 @@ body {
   animation: blickingBtn 2s infinite; }
 
 .composition {
-  position: relative; }
+  position: relative;
+  height: auto;
+  width: 45%; }
   .composition__photo {
     width: 100%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -145,6 +147,10 @@ body {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+.composition-2 {
+  width: 100%;
+  float: right; }
 
 .meals {
   list-style: none;

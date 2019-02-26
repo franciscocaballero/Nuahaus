@@ -1,6 +1,7 @@
 .composition {
     position: relative;
-
+    height: auto;
+    width: 45%;
     &__photo {
         width: 100%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
@@ -8,7 +9,7 @@
         position: absolute;
         z-index: 10;
         transition: all .2s;
-
+        
         &:hover {
             transform: scale(1.05) translateY(-.5rem);
             z-index: 20;
@@ -21,6 +22,10 @@
     }
 }
 
+.composition-2 {
+    width: 100%;
+    float: right;
+}
 .meals {
 
     list-style: none;
