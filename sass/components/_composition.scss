@@ -1,7 +1,8 @@
 .composition {
     position: relative;
     height: auto;
-    width: 45%;
+    width: 55%;
+    margin-left: 5rem;
     &__photo {
         width: 100%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
@@ -23,43 +24,21 @@
 }
 
 .composition-2 {
+    margin-top: 5rem;
+    margin-right: 15rem;
     width: 100%;
     float: right;
-}
-.meals {
+    z-index: 99;
+    position: relative;
 
-    list-style: none;
-    width: 100%;
-
-    &__list {
-        display: block;
-        float: left;
-        width: 25%;
-    }
-
-    &__photo {
-        width: 100%;
-        margin: 0;
-        overflow: hidden;
-
-        img {
-
-            width: 100%;
-            height: auto;
-        }
-    }
 }
 
-
-// .image-car {
-//     width: 640px;
-//     height: auto;
-//     overflow: hidden;
-//     position: relative;
+.background-box {
+    height: 25rem;
+    width: 20rem;
+    background-color: $color-grey-light-3;
+    position: relative;
+    top: 25rem;
+    left: 55rem;
     
-//     .inner {
-//         display: flex;
-//         position: absolute;
-//         left: -640px;
-//     }
-// }
+}

@@ -57,8 +57,9 @@ body {
 
 .heading-tertiary {
   text-transform: capitalize;
-  font-size: 2.5rem;
-  font-weight: 300; }
+  font-size: 3.5rem;
+  font-weight: 300;
+  font-family: 'Abril Fatface', cursive; }
   .heading-tertiary--white {
     color: #fff; }
 
@@ -133,7 +134,8 @@ body {
 .composition {
   position: relative;
   height: auto;
-  width: 45%; }
+  width: 55%;
+  margin-left: 5rem; }
   .composition__photo {
     width: 100%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -149,23 +151,20 @@ body {
     transform: scale(0.95); }
 
 .composition-2 {
+  margin-top: 5rem;
+  margin-right: 15rem;
   width: 100%;
-  float: right; }
+  float: right;
+  z-index: 99;
+  position: relative; }
 
-.meals {
-  list-style: none;
-  width: 100%; }
-  .meals__list {
-    display: block;
-    float: left;
-    width: 25%; }
-  .meals__photo {
-    width: 100%;
-    margin: 0;
-    overflow: hidden; }
-    .meals__photo img {
-      width: 100%;
-      height: auto; }
+.background-box {
+  height: 25rem;
+  width: 20rem;
+  background-color: #f9f9fb;
+  position: relative;
+  top: 25rem;
+  left: 55rem; }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -330,7 +329,8 @@ body {
 
 .section-about {
   padding: 10rem 0 25rem 0;
-  background-color: #f7f7f7; }
+  background-color: #fff;
+  margin-top: -20rem; }
 
 .section-meals {
   padding: 0; }
