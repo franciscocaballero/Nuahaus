@@ -7,3 +7,12 @@
     99%{    color:transparent;  }
     100%{   color: $color-white;    }
 }
+
+@keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }

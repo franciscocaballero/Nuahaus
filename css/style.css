@@ -10,6 +10,12 @@
   100% {
     color: #fff; } }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /* Basic Reset */
 *,
 *::after,
@@ -71,6 +77,9 @@ body {
 
 .u-center-text {
   text-align: center; }
+
+.u-left-text {
+  text-align: left; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -135,7 +144,8 @@ body {
   position: relative;
   height: auto;
   width: 55%;
-  margin-left: 5rem; }
+  margin-left: 5rem;
+  animation: fadeIn .9s; }
   .composition__photo {
     width: 100%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -165,6 +175,55 @@ body {
   position: relative;
   top: 25rem;
   left: 55rem; }
+
+.gallery-img--1 {
+  height: 25rem;
+  width: 28rem;
+  float: left;
+  position: relative;
+  top: 15rem; }
+
+.gallery-img--2 {
+  height: 25rem;
+  width: 28rem;
+  float: left;
+  position: relative; }
+
+.gallery-img--3 {
+  height: 25rem;
+  width: 28rem;
+  float: left;
+  position: relative;
+  bottom: 10rem; }
+
+.gallery-img--4 {
+  height: 25rem;
+  width: 28rem;
+  float: left;
+  position: relative;
+  top: 20rem; }
+
+.gallery-img--5 {
+  height: 25rem;
+  width: 28rem;
+  float: left;
+  position: relative;
+  left: 28rem; }
+
+.gallery-img--6 {
+  height: 25rem;
+  width: 28rem;
+  float: left;
+  position: relative;
+  top: 15rem;
+  left: 28rem; }
+
+.gallery-img--7 {
+  height: 25rem;
+  width: 28rem;
+  float: left;
+  position: relative;
+  bottom: 10rem; }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -334,6 +393,10 @@ body {
 
 .section-meals {
   padding: 0; }
+
+.section-gallery {
+  padding: 10rem 0 25rem 0;
+  background-color: #f9f9fb; }
 
 .section-reviews {
   padding: 5rem 0; }
