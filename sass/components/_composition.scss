@@ -97,3 +97,18 @@
         bottom: 10rem;
     }
 }
+
+// .float-img {
+//     z-index: -1;
+//     &--1 {
+//     }
+// }
+.float-img--1 {
+    position: relative;
+    height: 50rem;
+    width: 65rem;
+    bottom: 20rem;
+    left: 3rem;
+    z-index: 0;
+    
+}

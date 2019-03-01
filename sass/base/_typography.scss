@@ -46,6 +46,13 @@ body {
     }
 }
 
+.heading-sub {
+    text-transform: capitalize;
+    font-size: 2.5;
+    font-weight: 300;
+    font-family: 'Abril Fatface', cursive;
+
+}
 .paragraph {
     font-size: $default-font-size;
     font-weight: 300;

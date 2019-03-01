@@ -71,6 +71,12 @@ body {
   .heading-tertiary--white {
     color: #fff; }
 
+.heading-sub {
+  text-transform: capitalize;
+  font-size: 2.5;
+  font-weight: 300;
+  font-family: 'Abril Fatface', cursive; }
+
 .paragraph {
   font-size: 1.6rem;
   font-weight: 300; }
@@ -82,6 +88,9 @@ body {
 
 .u-left-text {
   text-align: left; }
+
+.u-margin-bottom-extra-small {
+  margin-bottom: 1rem !important; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -141,6 +150,24 @@ body {
   font-size: 4rem;
   color: #fff;
   animation: blickingBtn 2s infinite; }
+
+.services-card {
+  width: 45%;
+  height: 50%;
+  background-color: #fff;
+  text-align: left;
+  float: left;
+  margin: 1rem;
+  padding: 2rem;
+  transition: all .2s;
+  border-radius: .1rem; }
+  .services-card__icon {
+    color: #edbc46;
+    padding: 1rem;
+    font-size: 3rem; }
+  .services-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
 
 .composition {
   position: relative;
@@ -226,6 +253,14 @@ body {
   float: left;
   position: relative;
   bottom: 10rem; }
+
+.float-img--1 {
+  position: relative;
+  height: 50rem;
+  width: 65rem;
+  bottom: 20rem;
+  left: 3rem;
+  z-index: 0; }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -394,7 +429,7 @@ body {
   margin-top: -20rem; }
 
 .section-services {
-  padding: 10rem 0 25rem 0;
+  padding: 10rem 0 10rem 0;
   background-color: #f9f9fb; }
 
 .section-menu {
