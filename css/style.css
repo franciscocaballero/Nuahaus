@@ -169,6 +169,27 @@ body {
     transform: scale(1.1);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
 
+.reviews-card {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem; }
+  .reviews-card__img {
+    float: left; }
+    .reviews-card__img--p {
+      border-radius: 100rem;
+      height: 7rem;
+      width: 7rem;
+      margin: 1rem; }
+  .reviews-card__rating {
+    color: #D4AF37;
+    font-size: 2rem;
+    margin: 1rem; }
+  .reviews-card__paragraph {
+    font-size: 2rem; }
+  .reviews-card__name {
+    font-size: 2rem; }
+
 .composition {
   position: relative;
   height: auto;
@@ -299,19 +320,10 @@ body {
   visibility: hidden;
   transform: all .3s; }
 
-.reviews {
-  width: 100%;
-  margin: 0 auto;
-  padding: 3rem; }
-  .reviews__rating {
-    color: #D4AF37;
-    font-size: 2.5rem; }
-  .reviews__paragraph {
-    font-size: 2rem;
-    color: #fff; }
-  .reviews__name {
-    font-size: 2rem;
-    color: #fff; }
+.section-reviews__icon {
+  color: #edbc46;
+  font-size: 4rem;
+  text-align: center; }
 
 .header {
   min-height: 95vh;
@@ -440,7 +452,8 @@ body {
   background-color: #f9f9fb; }
 
 .section-reviews {
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  background-color: #f9f9fb; }
 
 .section-contact {
   padding: 15rem 0;

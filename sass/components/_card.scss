@@ -1,4 +1,4 @@
-.services-card{
+.services-card {
     width: 45%;
     height: 50%;
     background-color: $color-white;
@@ -8,13 +8,47 @@
     padding: 2rem;
     transition: all .2s;
     border-radius: .1rem;
-    &__icon{
+
+    &__icon {
         color: $color-primary;
         padding: 1rem;
         font-size: 3rem;
     }
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
         box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+    }
+}
+
+.reviews-card {
+    background-color: $color-white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+
+    &__img{
+        float: left;
+        &--p{
+            border-radius: 100rem;
+            height: 7rem;
+            width: 7rem;
+            margin: 1rem;
+        }
+    }
+    &__rating {
+        color: $color-gold;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+
+    }
+
+    &__name {
+        font-size: 2rem;
+
     }
 }
