@@ -180,15 +180,21 @@ body {
       border-radius: 100rem;
       height: 7rem;
       width: 7rem;
-      margin: 1rem; }
+      margin: .5rem; }
   .reviews-card__rating {
     color: #D4AF37;
     font-size: 2rem;
-    margin: 1rem; }
+    margin: 1rem;
+    float: left; }
   .reviews-card__paragraph {
-    font-size: 2rem; }
+    font-size: 1.5rem;
+    clear: left;
+    margin-bottom: 2rem; }
   .reviews-card__name {
-    font-size: 2rem; }
+    font-size: 1.5rem;
+    color: #edbc46;
+    border-top: 1px solid #777;
+    padding-top: 1rem; }
 
 .composition {
   position: relative;
