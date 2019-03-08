@@ -39,10 +39,12 @@
 <body>
     <header class="header">
         <div class="row">
-        <nav class="navigation">
-                    
+            <!-- <div class="sticky"> -->
+                
+                <nav class="navigation sticky">
+
                     <img src="../img/Nuahaus-logo.png" alt="logo-black" class="navigation__logo">
-     
+
 
                     <ul class="navigation__list">
                         <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
@@ -50,32 +52,33 @@
                         <li class="navigation__item"><a href="#" class="navigation__link">Order Online</a></li>
                         <li class="navigation__item"><a href="#" class="navigation__link">Contact us</a></li>
                     </ul>
-
-           
-                </nav>
-            </div>
-        <div class="header__text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">
-                    Fresh flavors
-                </span>
-                <span class="heading-primary--main">
-                    Creative cuisine
                     
-                </span>
-            </h1>
-            <a href="#" class="btn btn--primary">Learn more</a>
+                    
+                </nav>
+            <!-- </div> -->
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">
+                        Fresh flavors
+                    </span>
+                    <span class="heading-primary--main">
+                        Creative cuisine
+
+                    </span>
+                </h1>
+                <a href="#about" class="btn btn--primary">Learn more</a>
+            </div>
+
         </div>
-        
     </header>
 
     <main>
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="background-box"></div>
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/about-us2.jpeg" alt="Photo-1" class="composition__photo composition__photo--p1">'
+                        <img src="img/about-us3.jpg" alt="Photo-1" class="composition__photo composition__photo--p1">'
                     </div>
                 </div>
 
@@ -106,7 +109,7 @@
                         <h2 class="heading-secondary u-margin-bottom-small">
                             Our Services
                         </h2>
-                        </div>
+                    </div>
                     <div class="services-card">
                         <div class="services-card__icon">
                             <i class="fas fa-utensils"></i>
@@ -142,7 +145,7 @@
                     </div>
                     <div class="services-card">
                         <div class="services-card__icon">
-                                <i class="fas fa-cocktail"></i>
+                            <i class="fas fa-cocktail"></i>
                         </div>
                         <h3 class="heading-sub u-margin-bottom-extra-small">
                             Draft house
@@ -151,11 +154,11 @@
                             Stop by for Happy hour. We have an awesome selection ofg
                         </p>
                     </div>
-                    </div>
-                    <div class="col-1-of-2">
-                        <img src="img/float.png" alt="" class="float-img--1">
-                    </div>
-                
+                </div>
+                <div class="col-1-of-2">
+                    <img src="img/float.png" alt="" class="float-img--1">
+                </div>
+
             </div>
         </section>
         <section class="section-menu">
@@ -168,7 +171,7 @@
             <div class="row">
                 <iframe src="https://www.opendining.net/menu/55f1d8edeefd09130896618f?embed=true" border="0" id="order-frame"
                     style="border:0;width:100%;z-index:1000;" ALLOWTRANSPARENCY="true" frameBorder="0">
-    
+
                 </iframe>
                 <script src="https://www.opendining.net/media/js/order-frame.js"></script>
             </div>
@@ -195,7 +198,9 @@
             <div class="row">
                 <div class="u-center-text">
                     <h2 class="heading-secondary">Let's Work Togehter!</h2>
-                    <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero recusandae explicabo culpa, mollitia fugit maiores voluptatum accusamus doloremque, quae ducimus iste distinctio consequuntur quod ex quibusdam sint delectus fuga tenetur.</p>
+                    <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero recusandae
+                        explicabo culpa, mollitia fugit maiores voluptatum accusamus doloremque, quae ducimus iste
+                        distinctio consequuntur quod ex quibusdam sint delectus fuga tenetur.</p>
                     <a href="#" class="btn btn--primary">Contact us</a>
 
                 </div>
@@ -203,13 +208,13 @@
         </section>
         <section class="section-reviews">
             <div class="section-reviews__icon">
-                    <i class="far fa-comment-alt"></i>
+                <i class="far fa-comment-alt"></i>
             </div>
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Testimonials
                 </h2>
-            </div> 
+            </div>
 
             <div class="row">
                 <div class="col-1-of-3">
@@ -224,14 +229,16 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                
 
-                         <p class="reviews-card__paragraph ">
-                            "I recommend this wonderful place to anyone. You won't   be disappointed with their dishes. The place looks very cozy and their foods are so delicious, spicy, and tasty. Prices are decent!!! Come and taste yourself!!"
-                            </p>
-                         <br>
-                         <span class="reviews-card__name">Aki B.</span>
-                     </div>
+
+                        <p class="reviews-card__paragraph ">
+                            "I recommend this wonderful place to anyone. You won't be disappointed with their dishes.
+                            The place looks very cozy and their foods are so delicious, spicy, and tasty. Prices are
+                            decent!!! Come and taste yourself!!"
+                        </p>
+                        <br>
+                        <span class="reviews-card__name">Aki B.</span>
+                    </div>
                 </div>
                 <div class="col-1-of-3">
                     <div class="reviews-card">
@@ -245,14 +252,16 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                
 
-                         <p class="reviews-card__paragraph ">
-                            "The fried pork belly appetizer is bomb, since you can never have too much pork belly. Tried a few of the sushi rolls and they were good. Thai ice tea was really refreshing and sweetened just right with condensed milk.
-                         </p>
-                         <br>
-                         <span class="reviews-card__name">Aki B.</span>
-                     </div>
+
+                        <p class="reviews-card__paragraph ">
+                            "The fried pork belly appetizer is bomb, since you can never have too much pork belly.
+                            Tried a few of the sushi rolls and they were good. Thai ice tea was really refreshing and
+                            sweetened just right with condensed milk.
+                        </p>
+                        <br>
+                        <span class="reviews-card__name">Aki B.</span>
+                    </div>
                 </div>
                 <div class="col-1-of-3">
                     <div class="reviews-card">
@@ -266,17 +275,18 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                
 
-                         <p class="reviews-card__paragraph ">
-                            "I ordered the Drunken Noodles from Door Dash and requested medium spicy. They were delicious! Best Drunken noodles I've had in a long time. 
+
+                        <p class="reviews-card__paragraph ">
+                            "I ordered the Drunken Noodles from Door Dash and requested medium spicy. They were
+                            delicious! Best Drunken noodles I've had in a long time.
                             Will order again! I also ordered the Krapow chicken which was very good also.”
-                         </p>
-                         <br>
-                         <span class="reviews-card__name">Brenda J.</span>
-                     </div>
+                        </p>
+                        <br>
+                        <span class="reviews-card__name">Brenda J.</span>
+                    </div>
                 </div>
-                
+
 
             </div>
 
