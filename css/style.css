@@ -1,18 +1,7 @@
-@keyframes blickingBtn {
-  0% {
-    color: #fff; }
-  49% {
-    color: transparent; }
-  50% {
-    color: transparent; }
-  99% {
-    color: transparent; }
-  100% {
-    color: #fff; } }
-
 @keyframes fadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: scale(0.5, 0.5); }
   100% {
     opacity: 1; } }
 
@@ -193,8 +182,7 @@ body {
   position: relative;
   height: auto;
   width: 55%;
-  margin-left: 5rem;
-  animation: fadeIn .9s; }
+  margin-left: 5rem; }
   .composition__photo {
     width: 100%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -281,6 +269,19 @@ body {
   bottom: 20rem;
   left: 3rem;
   z-index: 0; }
+
+.hidden {
+  opacity: 0; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.7, 0.7); }
+  to {
+    opacity: 1; } }
+
+.fade-in-element {
+  animation: fadeIn 1.4s; }
 
 .section-cta {
   background-image: url(../img/cover14.jpg);

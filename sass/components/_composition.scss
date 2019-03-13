@@ -3,7 +3,7 @@
     height: auto;
     width: 55%;
     margin-left: 5rem;
-    animation: fadeIn .9s;
+   
     &__photo {
         width: 100%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
@@ -25,6 +25,7 @@
 }
 
 .composition-2 {
+ 
     margin-top: 5rem;
     margin-right: 15rem;
     width: 100%;
@@ -45,8 +46,8 @@
 }
 
 .gallery-img {
-
     &--1{
+  
         height: 25rem;
         width: 28rem;
         float: left;
@@ -54,12 +55,14 @@
         top: 15rem;
     }
     &--2{
+      
         height: 25rem;
         width: 28rem;
         float: left;
         position: relative;
     }
     &--3{
+        
         height: 25rem;
         width: 28rem;
         float: left;
@@ -67,6 +70,7 @@
         bottom: 10rem;
     }
     &--4{
+    
         height: 25rem;
         width: 28rem;
         float: left;
@@ -74,6 +78,7 @@
         top: 20rem;
     }
     &--5{
+      
         height: 25rem;
         width: 28rem;
         float: left;
@@ -81,15 +86,17 @@
         left: 28rem;
     }
     &--6{
+     
         height: 25rem;
         width: 28rem;
         float: left;
         position: relative;
         top: 15rem;
         left: 28rem;
-       
+        
     }
     &--7{
+       
         height: 25rem;
         width: 28rem;
         float: left;
@@ -112,3 +119,16 @@
     z-index: 0;
     
 }
+
+.hidden {
+    opacity: 0;
+  }
+
+  @keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
+
+  .fade-in-element {
+    animation: fadeIn 1.4s;
+  }
