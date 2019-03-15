@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/page-icon.png">
     <link rel="stylesheet" href="https://www.opendining.net/media/js/odn-location.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fjalla+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
 
@@ -17,15 +17,16 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="row">
-                <nav class="navigation">
-                    <img src="../img/Nuahaus-logo.png" alt="logo-black" class="navigation__logo">
+                <nav class="navigation" >
+                   <a href="#home"><img src="../img/Nuahaus-logo.png" alt="logo-black" class="navigation__logo"></a>
+                    
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">About us</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Order Online</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Contact us</a></li>
+                        <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+                        <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+                        <li class="navigation__item"><a href="#menu" class="navigation__link">Order Online</a></li>
+                        <li class="navigation__item"><a href="#contact" class="navigation__link">Contact us</a></li>
                     </ul>
                 </nav>
             <div class="header__text-box">
@@ -34,7 +35,7 @@
                         Fresh flavors
                     </span>
                     <span class="heading-primary--main">
-                        Creative cuisine
+                        Creative Catering
 
                     </span>
                 </h1>
@@ -74,7 +75,7 @@
                 </div>
         </section>
 
-        <section class="section-services hidden view">
+        <section class="section-services hidden view" id="services">
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="u-left-text">
@@ -133,7 +134,7 @@
 
             </div>
         </section>
-        <section class="section-menu hidden view">
+        <section class="section-menu hidden view" id="menu">
             <div class="u-center-text">
 
                 <h2 class="heading-secondary">
@@ -264,7 +265,7 @@
             </div>
         </section>
 
-        <section class="section-contact hidden view">
+        <section class="section-contact hidden view" id="contact"> 
             <div class="row">
                 <div class="contact">
                     <div class="contact__form">

@@ -105,11 +105,6 @@
     }
 }
 
-// .float-img {
-//     z-index: -1;
-//     &--1 {
-//     }
-// }
 .float-img--1 {
     position: relative;
     height: 50rem;
@@ -127,5 +122,5 @@
 
 //  
   .view {
-      transition: opacity 1s ease;
+      transition: opacity .5s ease;
   }

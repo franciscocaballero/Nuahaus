@@ -7,7 +7,7 @@ window.odnApiKey = '5124f32117f91fb66299b9756991ce2b2c87d6fb';
 function isVisible(element) {
 
     let elementBox = element.getBoundingClientRect();
-    let distanceFromTop = -400;
+    let distanceFromTop = -300;
 
     if(elementBox.top - window.innerHeight < distanceFromTop){
         return true;
