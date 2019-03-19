@@ -1,3 +1,16 @@
+/*
+0 - 600px:      Phone
+600px - 900px:   Tablet portrait
+900px - 1200px:  Tablet landscape
+1200px - 1800px: is where our normal stlyes apply
+1800px *:    Big Desktop
+*/
+/* Break point arguments 
+- phone
+- tab-port 
+- tab-land
+- big- desk top
+*/
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -16,6 +29,21 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 60%; } }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 70%; } }
+  @media (min-width: 1800px) {
+    html {
+      font-size: 80%; } }
 
 body {
   box-sizing: border-box;
@@ -147,14 +175,15 @@ body {
     padding: 1rem;
     font-size: 3rem; }
   .services-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+    transform: translateY(-1rem);
+    box-shadow: 6px 4px 31px -5px rgba(140, 140, 140, 0.75); }
 
 .reviews-card {
   background-color: #fff;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem; }
+  padding: 2rem;
+  transition: all .2s; }
   .reviews-card__img {
     float: left; }
     .reviews-card__img--p {
@@ -176,6 +205,8 @@ body {
     color: #edbd46;
     border-top: 1px solid #777;
     padding-top: 1rem; }
+  .reviews-card:hover {
+    transform: translateY(-1rem); }
 
 .composition {
   position: relative;
@@ -212,60 +243,59 @@ body {
   top: 25rem;
   left: 55rem; }
 
-.gallery-img--1 {
-  height: 25rem;
-  width: 28rem;
-  float: left;
-  position: relative;
-  top: 15rem; }
-
-.gallery-img--2 {
-  height: 25rem;
-  width: 28rem;
-  float: left;
-  position: relative; }
-
-.gallery-img--3 {
-  height: 25rem;
-  width: 28rem;
-  float: left;
-  position: relative;
-  bottom: 10rem; }
-
-.gallery-img--4 {
-  height: 25rem;
-  width: 28rem;
-  float: left;
-  position: relative;
-  top: 20rem; }
-
-.gallery-img--5 {
-  height: 25rem;
-  width: 28rem;
-  float: left;
-  position: relative;
-  left: 28rem; }
-
-.gallery-img--6 {
-  height: 25rem;
-  width: 28rem;
-  float: left;
-  position: relative;
-  top: 15rem;
-  left: 28rem; }
-
-.gallery-img--7 {
-  height: 25rem;
-  width: 28rem;
-  float: left;
-  position: relative;
-  bottom: 10rem; }
+.gallery-img {
+  transition: all .2s ease-in-out; }
+  .gallery-img:hover {
+    transform: scale(1.1); }
+  .gallery-img--1 {
+    background-image: linear-gradient(to right, black, rgba(255, 255, 255, 0)), url(../img/food-1.jpg);
+    height: 25rem;
+    width: 28rem;
+    float: left;
+    position: relative;
+    top: 15rem; }
+  .gallery-img--2 {
+    height: 25rem;
+    width: 28rem;
+    float: left;
+    position: relative; }
+  .gallery-img--3 {
+    height: 25rem;
+    width: 28rem;
+    float: left;
+    position: relative;
+    bottom: 10rem; }
+  .gallery-img--4 {
+    height: 25rem;
+    width: 28rem;
+    float: left;
+    position: relative;
+    top: 20rem; }
+  .gallery-img--5 {
+    height: 25rem;
+    width: 28rem;
+    float: left;
+    position: relative;
+    left: 28rem; }
+  .gallery-img--6 {
+    height: 25rem;
+    width: 28rem;
+    float: left;
+    position: relative;
+    top: 15rem;
+    left: 28rem; }
+  .gallery-img--7 {
+    height: 25rem;
+    width: 28rem;
+    float: left;
+    position: relative;
+    bottom: 10rem; }
 
 .float-img--1 {
   position: relative;
   height: 50rem;
   width: 65rem;
-  bottom: 20rem;
+  bottom: 17rem;
   left: 3rem;
   z-index: 0; }
 
