@@ -21,33 +21,28 @@
 900px - 1200px:  Tablet landscape
 1200px - 1800px: is where our normal stlyes apply
 1800px *:    Big Desktop
-*/
 
-
-@mixin respond-phone {
-    @media (max-width: 600px) { @content };
-}
-
-/* Break point arguments 
+Break point arguments 
 - phone
 - tab-port 
 - tab-land
 - big- desk top
+
+1em = 16px 
 */
 
 @mixin respond ($break-point) {
     @if $break-point == phone {
-        @media(max-width: 600px) {@content};
+        @media(max-width: 37.5em) {@content}; //600px
     }
     @if $break-point == tab-port {
-        @media(max-width: 900px) {@content};
+        @media(max-width: 56.25em) {@content}; //900px
     }
     @if $break-point == tab-land {
-        @media(max-width: 1200px) {@content};
+        @media(max-width: 75em) {@content};  //1200px
     }
     @if $break-point == big-desktop {
-        @media(min-width: 1800px) {@content};
+        @media(min-width: 112.5rem) {@content}; //1800px
     }
     
 }
-
