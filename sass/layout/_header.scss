@@ -17,5 +17,10 @@
         
 
     }
+
+    @include respond(phone){
+        min-height: 85vh;
+        text-align: center;
+    }
 }
 
