@@ -28,6 +28,13 @@
 }
 
 .navigation {
+// @include respond(tab-port) {
+//         font-size: 3rem; 
+//     }
+
+//     @include respond(phone) {
+//         display: none;
+//     }
 
     &__logo {
 

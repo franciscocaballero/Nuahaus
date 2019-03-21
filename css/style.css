@@ -10,7 +10,7 @@ Break point arguments
 - tab-port 
 - tab-land
 - big- desk top
-
+    // Defines what 1rem is
 1em = 16px 
 */
 @keyframes fadeIn {
@@ -31,15 +31,12 @@ Break point arguments
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 50%; } }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
   @media (min-width: 112.5rem) {
     html {
       font-size: 75%; } }
@@ -63,6 +60,12 @@ body {
   font-size: 5.5rem;
   letter-spacing: .5rem;
   font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .heading-primary {
+      font-size: 3.5rem; } }
+  @media (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 3rem; } }
   .heading-primary--main {
     display: block; }
   .heading-primary--sub {
@@ -368,6 +371,12 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row::after {
     content: "";
     display: table;
@@ -376,6 +385,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
