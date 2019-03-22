@@ -1,8 +1,8 @@
 .composition {
-    position: relative;
-    height: auto;
-    width: 55%;
-    margin-left: 5rem;
+    // position: relative;
+    // height: auto;
+    // width: 55%;
+    // margin-left: 5rem;
    
     &__photo {
         width: 100%;
@@ -33,6 +33,11 @@
     z-index: 99;
     position: relative;
 
+    @include respond(tab-port) {
+    margin-top: 0;
+    margin-right: 0;
+    }
+
 }
 
 .background-box {
@@ -42,6 +47,10 @@
     position: relative;
     top: 25rem;
     left: 55rem;
+
+    @include respond(tab-port){
+    display: none;
+    } 
     
 }
 
@@ -131,7 +140,6 @@
     
   }
 
-//  
   .view {
       transition: opacity .5s ease;
   }
