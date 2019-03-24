@@ -3,16 +3,19 @@
 }
 .u-left-text {
     text-align: left;
+    @include respond(tab-port){
+        text-align: center;
+    }
 }
 .u-margin-bottom-extra-small {
-    margin-bottom: 1rem !important
+    margin-bottom: 1rem !important;
 }
 .u-margin-bottom-small {
-    margin-bottom: 1.5rem !important
+    margin-bottom: 1.5rem !important;
 }
 
 .u-margin-bottom-medium {
-    margin-bottom: 4rem !important
+    margin-bottom: 4rem !important;
 }
 
 .u-margin-bottom-big {
@@ -31,5 +34,5 @@
 }
 
 .u-margin-top-small {
-    margin-top: 1.5rem !important
+    margin-top: 1.5rem !important;
 }

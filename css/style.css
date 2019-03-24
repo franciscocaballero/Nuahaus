@@ -108,6 +108,9 @@ body {
 
 .u-left-text {
   text-align: left; }
+  @media (max-width: 56.25em) {
+    .u-left-text {
+      text-align: center; } }
 
 .u-margin-bottom-extra-small {
   margin-bottom: 1rem !important; }
@@ -172,6 +175,9 @@ body {
   padding: 2rem;
   transition: all .2s;
   border-radius: .1rem; }
+  @media (max-width: 56.25em) {
+    .services-card {
+      width: 95%; } }
   .services-card__icon {
     color: #edbd46;
     padding: 1rem;
@@ -215,6 +221,12 @@ body {
   height: auto;
   width: 55%;
   margin-left: 5rem; }
+  @media (max-width: 56.25em) {
+    .composition {
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
   .composition__photo {
     width: 100%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -309,6 +321,12 @@ body {
   bottom: 17rem;
   left: 3rem;
   z-index: 0; }
+  @media (max-width: 56.25em) {
+    .float-img--1 {
+      height: 25rem;
+      width: 35rem;
+      bottom: 0;
+      left: 0; } }
 
 .hidden {
   opacity: 0; }
@@ -531,21 +549,29 @@ body {
   @media (max-width: 56.25em) {
     .section-about {
       margin-top: 0;
-      padding: 8rem 0 5rem 0; } }
+      padding: 8rem 0 5rem 0;
+      text-align: center; } }
 
 .section-services {
   padding: 10rem 0 10rem 0;
   background-color: #f9f9fb; }
   @media (max-width: 56.25em) {
     .section-services {
-      padding: 6rem 0 5rem 0; } }
+      padding: 5rem 0 5rem 0; } }
 
 .section-menu {
   padding: 10rem 0 10rem 0; }
+  @media (max-width: 56.25em) {
+    .section-menu {
+      padding: 5rem 0 5rem 0; } }
 
 .section-gallery {
   padding: 10rem 0 25rem 0;
   background-color: #f9f9fb; }
+  @media (max-width: 56.25em) {
+    .section-gallery {
+      padding: 5rem 0 5rem 0;
+      text-align: center; } }
 
 .section-cta {
   padding: 15rem 0 20rem 0; }
