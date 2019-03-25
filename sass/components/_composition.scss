@@ -66,72 +66,93 @@
 
 .gallery-img {
 
-    transition: all .2s ease-in-out;
-    &:hover {
-        
-        transform: scale(1.1);
-    }
 
+    transition: all .2s ease-in-out;
+    // &:hover {
+    //     transform: scale(1.1);
+    // }
+    @include respond(tab-port){
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+    }
     &--1{
-        background-image:
-        linear-gradient(to right,
-        rgba($color-black, 1),
-        rgba($color-white, 0)),
-        url(../img/food-1.jpg);
         height: 25rem;
         width: 28rem;
         float: left;
         position: relative;
         top: 15rem;
+        @include absCenter;
+        @include respond(tab-port){
+            top: 0;
+            left: 0;
+            }
     }
     &--2{
-      
         height: 25rem;
         width: 28rem;
         float: left;
         position: relative;
+        @include respond(tab-port){
+            top: 0;
+            left: 0;
+            }
     }
     &--3{
-        
         height: 25rem;
         width: 28rem;
         float: left;
         position: relative;
         bottom: 10rem;
+        @include respond(tab-port){
+            top: 0;
+            left: 0;
+            }
     }
     &--4{
-    
         height: 25rem;
         width: 28rem;
         float: left;
         position: relative;
         top: 20rem;
+        @include respond(tab-port){
+            top: 0;
+            left: 0;
+            }
     }
     &--5{
-      
         height: 25rem;
         width: 28rem;
         float: left;
         position: relative;
         left: 28rem;
+        @include respond(tab-port){
+            top: 0;
+            left: 0;
+            }
     }
     &--6{
-     
         height: 25rem;
         width: 28rem;
         float: left;
         position: relative;
         top: 15rem;
         left: 28rem;
-        
+        @include respond(tab-port){
+        top: 0;
+        left: 0;
+        }
     }
     &--7{
-       
         height: 25rem;
         width: 28rem;
         float: left;
         position: relative;
         bottom: 10rem;
+        @include respond(tab-port){
+            top: 0;
+            left: 0;
+            }
     }
 }
 
