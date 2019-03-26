@@ -357,10 +357,13 @@ body {
   z-index: 0; }
   @media (max-width: 56.25em) {
     .float-img--1 {
-      height: 25rem;
-      width: 35rem;
+      height: 20rem;
+      width: 30rem;
       bottom: 0;
-      left: 0; } }
+      left: 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
 
 .hidden {
   opacity: 0; }
@@ -388,6 +391,9 @@ body {
   display: block;
   color: inherit;
   resize: none; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -625,8 +631,20 @@ body {
 .contact {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/salad.jpg);
   background-size: cover;
-  border-radius: 3px;
-  height: 55rem; }
+  border-radius: 3px; }
+  @media (max-width: 75em) {
+    .contact {
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/salad.jpg);
+      background: cover; } }
+  @media (max-width: 56.25em) {
+    .contact {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/salad.jpg); } }
   .contact__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .contact__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .contact__form {
+        width: 100%; } }

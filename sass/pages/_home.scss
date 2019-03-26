@@ -56,9 +56,30 @@
     url(../img/salad.jpg); 
     background-size: cover;
     border-radius: $border-radius-small;
-    height: 55rem;
+
+
+    @include respond(tab-land){
+        background-image: linear-gradient(90deg,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent 65%),
+        url(../img/salad.jpg); 
+        background: cover;
+    }
+    @include respond(tab-port){
+        background-image: linear-gradient(to right,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%), 
+        url(../img/salad.jpg)
+    }
     &__form{
         width: 50%;
         padding: 6rem;
+        @include respond(tab-land){
+            width: 65%;
+        }
+        @include respond(tab-port){
+            width: 100%;
+        }
     }
 }
