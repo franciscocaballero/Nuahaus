@@ -46,5 +46,18 @@ window.addEventListener('scroll',function() {
 });
 
 
+function responsive(){
+    var navbr = document.querySelector(".navigation__list");
+    if (navbr.className === "topnav") {
+        navbr.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+}
 
 
+var hamburger = document.querySelector(".navigation__link--icon");
+
+hamburger.addEventListener("click", function(){
+    console.log("red");
+})
