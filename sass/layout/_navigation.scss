@@ -15,13 +15,13 @@
         }
 
         &__list {
-            padding-right: 14rem;
+            // padding-right: 14rem;
             padding-top: 1rem;
         }
         &__item {
             display: inline-block;
             font-size: 1.5rem;
-            color: red;
+           
             &:not(:last-child) {
                 margin-right: 3rem;
             }
@@ -32,47 +32,16 @@
             padding-bottom: 2rem;
         }
     }
-
-@include respond(tab-port){
-    .sticky {
-
-        margin-top: -4rem;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.98);
-        box-shadow: 0 2px 2px #efefef;
-        z-index: 9999;
-    
-        .navigation {
-            &__logo {
-                padding-left: 14rem;
-            }
-    
-            &__list {
-                padding-right: 14rem;
-                padding-top: 1rem;
-            }
-    
-    
-            &__link {
-                color: $color-black;
-                padding-bottom: 2rem;
+   
+    @include respond(phone){
+        .sticky {
+            .navigation {
+                display: none;
             }
         }
-        
     }
 }
-   
-}
-.nav-responsive{
-    background-color: red;
-        float: none;
-        display: block;
-        text-align: left;
-        
-}
+
 
 .navigation {
 
@@ -127,18 +96,21 @@
     
             &__logo {
            
-            
+                padding-left: 1rem;
             }
         
             &__list {
                 margin-top: 5rem;
                 list-style: none;
-                float: right;
-        
+                float: none;
+                text-align: center;
+                // display: none;
+                display: inline-block;
             }
         
             &__item {
-                display: none;
+                display: block;
+                // display: none;
                 &:not(:last-child) {
                     // display: none;
                 }
@@ -147,7 +119,7 @@
             &__link {
         
                 text-decoration: none;
-                color: $color-white;
+                color: $color-black;
                 margin-bottom: 3rem;
                 font-size: 1.6rem;
                 font-weight: 100;
@@ -171,3 +143,11 @@
         }
     }
 }
+
+// .nav-responsive{
+//     background-color: red;
+//         float: none;
+//         display: block;
+//         text-align: left;
+        
+// }
