@@ -33,10 +33,10 @@
         }
     }
    
-    @include respond(phone){
+    @include respond(tab-port){
         .sticky {
             .navigation {
-                display: none;
+                display: none !important;
             }
         }
     }
