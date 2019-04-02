@@ -442,6 +442,10 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all .4s .2s; }
+  .popup__icon {
+    font-size: 5rem;
+    text-align: center;
+    display: inline-block; }
   .popup:target {
     opacity: 1;
     visibility: visible; }

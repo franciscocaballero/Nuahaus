@@ -22,8 +22,14 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.5);
         transition: all .4s .2s;
+        // background-color: $color-primary;
+        // color: white;
     }
-
+   &__icon {
+       font-size: 5rem;
+       text-align: center;
+       display: inline-block;
+   }
     //Open states
     &:target {
         opacity: 1;
