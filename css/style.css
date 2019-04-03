@@ -442,10 +442,14 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all .4s .2s; }
+  .popup__icon-box {
+    margin: 2rem !important; }
   .popup__icon {
-    font-size: 5rem;
-    text-align: center;
-    display: inline-block; }
+    font-size: 10rem;
+    text-align: center; }
+    @media (max-width: 56.25em) {
+      .popup__icon {
+        font-size: 5rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -649,7 +653,7 @@ body {
     text-align: center;
     display: inline-block; }
   .navigation .navigation__item {
-    display: block; }
+    display: none; }
   .navigation .navigation__link {
     text-decoration: none;
     color: #000;

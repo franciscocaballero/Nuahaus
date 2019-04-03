@@ -24,12 +24,22 @@
         transition: all .4s .2s;
         // background-color: $color-primary;
         // color: white;
+        @include respond (tab-port) {
+
+        }
     }
-   &__icon {
-       font-size: 5rem;
-       text-align: center;
-       display: inline-block;
-   }
+    &__icon-box {
+        margin: 2rem !important;
+    }
+    
+            &__icon {
+                font-size: 10rem;
+                text-align: center;
+                @include respond (tab-port) {
+                    font-size: 5rem;
+                }
+                
+            }
     //Open states
     &:target {
         opacity: 1;

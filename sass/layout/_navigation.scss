@@ -109,8 +109,8 @@
             }
         
             &__item {
-                display: block;
-                // display: none;
+                // display: block;
+                display: none;
                 &:not(:last-child) {
                     // display: none;
                 }
